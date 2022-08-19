@@ -17,11 +17,11 @@
 
 
 @media screen and (min-width: 320px) {
-  
+
     
 body{
         font-family: 'Inter', sans-serif;  
-        background-color: #1f1d2c;
+         background-color: #1f1d2c; 
     }
     
 .header {
@@ -148,6 +148,7 @@ h1{
     padding-top: 5%;
     padding-left: 20px;
     padding-right: 20px;
+    width: 100%;
 }
 
 .education-card{
@@ -178,7 +179,6 @@ p{
     margin-bottom: 150px;
 }
 .año{
-    display: block;
     margin-top: 30px;
     font-size: 40px;
 }
@@ -192,17 +192,16 @@ p{
 
 .general{
     display: flex;
-    gap: 50px;
-    padding-left: 50px;
+    justify-content: space-around;
+    padding-left: 15px;
 }
-.img-icon{
-    width: 100px;
 
 }
 .rectangle2{
     position: absolute;
     z-index: 1;
-    right: 300px;
+    right: 76%;
+    width: auto;
     
 }
 .habilidad{
@@ -290,7 +289,7 @@ p{
     margin-top: 20px;
     margin-bottom: 20px;
 }
-}
+
  /* TOGGLE */ 
 .nav-toggle {
     color: white;
@@ -309,13 +308,14 @@ p{
 
 
   /* MOBILE */
-@media (max-width: 768px) {
+
+@media (max-width: 768px)  {
     
   
 .header {
       height: 60px;
     }
-  
+ 
   
 .nav-menu {
       flex-direction: column;
@@ -363,8 +363,6 @@ p{
     .about-section{
         width: 600px;
     }
-
-
 
 }
 
