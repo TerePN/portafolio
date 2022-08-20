@@ -1,3 +1,4 @@
+@import url('./mediaqueris/mediaqueris.css');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 
 :root{
@@ -21,21 +22,22 @@
     
 body{
         font-family: 'Inter', sans-serif;  
-         background-color: #1f1d2c; 
+         /* background-color: #1f1d2c;  */
     }
     
 .header {
-        background-color: #1f1d2c;
-        height: 100%;
+        background-color: #1f1d2c; 
+        height: 80%;
         position: fixed;
         width: 100%;
         top: 0;
         left: 0;
-        z-index: 20;
+        z-index: 22;
+         
       }
 .wrapper {
         width: 100vw;
-        height: 70vh;
+        height: 70vh; 
         background-color: #1f1d2c;
      }
       
@@ -171,12 +173,18 @@ p{
     margin-top: 20px;
     font-size: 22px;
 }
+.img-icon{
+    width: 100px;
+}
+
 
 .experience-section{
     color: #ffffff;
     text-align: center;
-    margin-top: 30px;
-    margin-bottom: 150px;
+    background-color: #1f1d2c;
+    height:500px;
+    padding-top: 7%;
+    width: 100%;
 }
 .año{
     margin-top: 30px;
@@ -184,7 +192,7 @@ p{
 }
 .experiencia{
     font-size: 50px;
-    margin-bottom: 30px;
+    
 }
 .parrafo{
     font-size: 25px;
@@ -193,53 +201,63 @@ p{
 .general{
     display: flex;
     justify-content: space-around;
-    padding-left: 15px;
+    width: 100%;
+    margin-top: 5%;
+}
+.habilidades-section{
+    background-color: #1f1d2c;
+    width: 100%;
+    height: auto;
+    padding-top: 7%;
+}
+}
+.habilidad{
+    color: #ffffff;
+    z-index: 2;
+    font-size: 50px;
+    text-align: center;
+    
 }
 
+.habilidad-cards{
+    color: #ffffff;
+    
+}
+.habilidad-card{
+    /* margin-top: 1%; */
+    margin-bottom: 45px;
+
+}
+.porcentajes .porcentaje{
+    margin-top: 19px;
+    color: #F1A600;
+    font-size: 45px;
+    padding-left: 40px;
+    z-index: 20;
+}
+
+.total{
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 20px;
+    width: 100%;
+    height: 450px;
 }
 .rectangle2{
     position: absolute;
     z-index: 1;
     right: 76%;
     width: auto;
+    height:400px;
     
 }
-.habilidad{
-    color: #ffffff;
-    z-index: 20;
-    font-size: 50px;
-    text-align: center;
-}
-
-.habilidad-cards{
-    color: #ffffff;
-    padding-bottom: 50%;
-}
-.habilidad-card{
-    margin-bottom: 45px;
-
-}
-.porcentajes .porcentaje{
-    margin-top: 30px;
-    color: #F1A600;
-    font-size: 34px;
-    padding-left: 40px;
-    z-index: 10;
-}
-
-.total{
-    display: flex;
-    justify-content: space-evenly;
-    gap: 80px;
-    width: 100%;
-    height: 450px;
-}
-
 .portafolios{
     color: #ffffff;
     text-align: center;
     width: 100%;
-    height: 800px;
+    height: 900px;
+    background-color: #1f1d2c;
+    padding-top: 7%;
 }
 .portafolio{
     font-size: 50px;
@@ -258,26 +276,29 @@ p{
 .footer{
     color: #e5e5e5;
     background-color: #242635;
-    height: 300px;
+    height: 340px;
+    text-align: center;
+
 }
 .Contacto{
     align-items: center;
     text-align: center;
-    padding-top: 10px;
-    font-size: 30px;
+    padding-top: 7%;
+    font-size: 40px;
 }
 
 .footer--cards{
     margin-top: 20px;
     display: flex;
-    justify-content: space-around;
+    gap: 60px;
+    justify-content: center;
 }
 .imagen-card{
-    width: 60px;
-   
+    width: 80px;
+    margin-top: 20px;
 }
 .imagen-card2{
-    width: 60px;
+    width: 80px;
     margin-top: 50px;
 }
 .footer-reserved--acd{
@@ -286,8 +307,9 @@ p{
 }
 .footer-reserved{
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    background-color: #1f1d2c;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
  /* TOGGLE */ 
@@ -309,11 +331,11 @@ p{
 
   /* MOBILE */
 
-@media (max-width: 768px)  {
+@media (max-width: 728px)  {
     
   
 .header {
-      height: 60px;
+      height: 30px;
     }
  
   
@@ -328,7 +350,7 @@ p{
       padding: 20px 0;
       
   
-      height: calc(100% - 60px);
+       height: calc(100% - 60px);
       overflow-y: auto;
   
       left: 100%;
@@ -359,7 +381,7 @@ p{
   
 .nav-toggle:focus:not(:focus-visible) {
       outline: none;
-    }
+    } 
     .about-section{
         width: 600px;
     }
